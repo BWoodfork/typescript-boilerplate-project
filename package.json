@@ -13,9 +13,8 @@
   },
   "scripts": {
     "lint": "tslint -t stylish --project tsconfig.json",
-    "pretest": "npm run lint",
-    "test": "npm run test-only",
-    "test-only": "jest --coverage",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "jest": {
