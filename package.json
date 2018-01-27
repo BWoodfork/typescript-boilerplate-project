@@ -1,0 +1,38 @@
+{
+  "name": "typescript-boilerplate-project",
+  "version": "1.0.0",
+  "description": "A boilerplate for Typescript projects",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/jest": "^22.0.0",
+    "jest": "~22.0.3",
+    "ts-jest": "^22.0.0",
+    "tslint": "~5.8.0",
+    "typescript": "~2.6.2",
+    "ts-node": "4.1.0"
+  },
+  "scripts": {
+    "lint": "tslint -t stylish --project tsconfig.json",
+    "pretest": "npm run lint",
+    "test": "npm run test-only",
+    "test-only": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "file-system": "^2.2.2"
+  }
+}
