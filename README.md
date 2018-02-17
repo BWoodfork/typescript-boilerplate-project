@@ -1,4 +1,7 @@
-# Install Deps
+# Install Yarn using homebrew
+`brew install yarn`
+
+# Install Dependencies
 
 `yarn install`
 
