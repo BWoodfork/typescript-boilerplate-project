@@ -15,7 +15,9 @@
     "lint": "tslint -t stylish --project tsconfig.json",
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "build": "tsc --p tsconfig.json",
+    "clean": "rm -rf dist"
   },
   "jest": {
     "transform": {
