@@ -8,8 +8,7 @@
     "jest": "~22.0.3",
     "ts-jest": "^22.0.0",
     "tslint": "~5.8.0",
-    "typescript": "~2.6.2",
-    "ts-node": "4.1.0"
+    "file-system": "^2.2.2"
   },
   "scripts": {
     "lint": "tslint -t stylish --project tsconfig.json",
@@ -34,6 +33,7 @@
     ]
   },
   "dependencies": {
-    "file-system": "^2.2.2"
+    "typescript": "~2.6.2",
+    "ts-node": "4.1.0"
   }
 }
