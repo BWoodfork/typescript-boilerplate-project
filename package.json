@@ -5,10 +5,10 @@
   "main": "index.js",
   "devDependencies": {
     "@types/jest": "^22.0.0",
-    "jest": "~22.0.3",
+    "file-system": "^2.2.2",
+    "jest": "^26.1.0",
     "ts-jest": "^22.0.0",
-    "tslint": "~5.8.0",
-    "file-system": "^2.2.2"
+    "tslint": "~5.8.0"
   },
   "scripts": {
     "lint": "tslint -t stylish --project tsconfig.json",
@@ -19,6 +19,8 @@
     "clean": "rm -rf dist"
   },
   "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
     },
@@ -33,7 +35,7 @@
     ]
   },
   "dependencies": {
-    "typescript": "~2.6.2",
-    "ts-node": "4.1.0"
+    "ts-node": "4.1.0",
+    "typescript": "^3.9.7"
   }
 }
